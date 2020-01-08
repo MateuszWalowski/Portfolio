@@ -209,6 +209,9 @@ h2 {
   background-color: #660000;
 }
 
+h2:hover { 
+  cursor: pointer;
+}
 h3 {
   font-family: schwager-sans, sans-serif;
   background-color: #660000;
@@ -220,6 +223,10 @@ h3 {
   justify-content: center;
 
 
+}
+
+h3:hover { 
+  cursor: pointer;
 }
 
 h4 {
@@ -360,7 +367,7 @@ grid-item:nth-child(4) {
 
 
 .sectionpicture {
-  max-height: 20vmax;
+max-height: 20vmax;
   margin: auto;
 }
 
@@ -389,7 +396,7 @@ p {
   display: none;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 15%;
   max-width: 20%;
 }
 
@@ -407,7 +414,7 @@ margin-top: 0;
 
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:700px) {
 
   .gridabout {
     display: grid;
@@ -416,8 +423,8 @@ margin-top: 0;
 }
 
 .gridwiththings {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   grid-template-columns: 1fr;
   grid-template-areas: " column-1 "
       " column-2 "
@@ -432,17 +439,14 @@ margin-top: 0;
 @media only screen and (max-width:600px) {
   .burgermenu {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    max-width: 25%;
   }
 
   .navigation {
-    width: 100%;
+    margin-right: 20vw;
+    margin-left: 20vw;
     display: none;
     font-style: normal;
-    grid-template-rows: 4vh 4vh 4vh 4vh 4vh 4vh ;
+    grid-template-rows: 4vh 4vh 4vh 4vh 4vh ;
     grid-template-columns: 100%;
     font-size: 120%;
   }
